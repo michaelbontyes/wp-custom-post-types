@@ -18,9 +18,10 @@ function create_custom_post_project() {
 
         'public' => true,
         'rewrite' => array('with_front' => false),
-        'supports' => array( 'title', 'editor', 'thumbnail','categories','revisions'),
-        'menu_icon' => 'dashicons-format-aside',
+        'supports' => array( 'title', 'editor', 'thumbnail','post-formats','categories','revisions'),
+        'menu_icon' => 'dashicons-megaphone',
         'has_archive' => true,  
+        'taxonomies' => array('category', 'post_tag'),
         )
     );    
 }
